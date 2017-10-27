@@ -4,7 +4,7 @@
   "description": "Handy html cleanup utility.",
   "main": "src/index.js",
   "bin": {
-    "snyk": "./build/index.js"
+    "htmllaundry": "./build/index.js"
   },
   "scripts": {
     "test": "mocha --require babel-register --reporter spec",
