@@ -2,10 +2,10 @@
   "name": "htmllaundry",
   "version": "0.0.1",
   "description": "Handy html cleanup utility.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "mocha --require babel-register --reporter spec",
-    "build": "babel src -d dist",
+    "build": "babel src -d build",
     "prepublish": "npm run build"
   },
   "repository": {
