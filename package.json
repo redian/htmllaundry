@@ -22,7 +22,7 @@
     "escape"
   ],
   "author": "Redian Ibra <redian.ibra@gmail.com> (https://www.shqiperia.co.uk/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/redian/htmllaundry/issues"
   },
