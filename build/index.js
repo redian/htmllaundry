@@ -1,9 +1,6 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
+var htmllaundry = {
   /**
    * Strip all markup from a HTML fragment.
    *
@@ -18,3 +15,5 @@ exports.default = {
     return markup.replace(regex, '');
   }
 };
+
+module.exports = htmllaundry;
