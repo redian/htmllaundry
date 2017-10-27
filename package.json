@@ -1,0 +1,37 @@
+{
+  "name": "htmllaundry",
+  "version": "0.0.1",
+  "description": "Handy html cleanup utility.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register --reporter spec",
+    "build": "babel src -d dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/redian/htmllaundry.git"
+  },
+  "keywords": [
+    "html",
+    "sanitize",
+    "cleanup",
+    "escape"
+  ],
+  "author": "Redian Ibra <redian.ibra@gmail.com> (https://www.shqiperia.co.uk/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redian/htmllaundry/issues"
+  },
+  "homepage": "https://github.com/redian/htmllaundry#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "prettier-eslint": "^8.2.1"
+  },
+  "dependencies": {}
+}
