@@ -1,4 +1,4 @@
-htmllaundry
+htmllaundry 
 =========
 
 A simple utility node module providing methods to handle html data. Inspired by the [htmllaundry](https://pypi.python.org/pypi/htmllaundry) python package with the same name.
@@ -38,6 +38,7 @@ A simple utility node module providing methods to handle html data. Inspired by 
 ```shell
    npm test
 ```
+Test Status: [![CircleCI](https://circleci.com/gh/redian/htmllaundry/tree/master.svg?style=svg)](https://circleci.com/gh/redian/htmllaundry/tree/master)
 
 ## Contributing
 
