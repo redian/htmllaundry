@@ -73,6 +73,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
+* 0.1.3 Use module.exports in order for the es5 bundle to work.
 * 0.1.2 Change back to object const with as default export.
 * 0.1.1 Update documentation
 * 0.1.0 Add escape and unescape methods as well as refactor to a singleton 

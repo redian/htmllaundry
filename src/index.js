@@ -56,4 +56,4 @@ const Htmllaundry = {
   },
 };
 
-export default Htmllaundry;
+module.exports = Htmllaundry;
