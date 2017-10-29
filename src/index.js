@@ -1,16 +1,14 @@
-class Htmllaundry {
-  constructor() {
-    this.tagsRegex = /(<([^>]+)>)/ig;
-    this.charsRegex = /(?!(&\w+;))[&<>"'`]/g; // Negative lookahead to ignore already encoded entities.
-    this.htmlEscapes = {
-      '<': '&lt;',
-      '>': '&gt;',
-      '&': '&amp;',
-      '"': '&quot;',
-      "'": '&apos;',
-      '`': '&#x60;',
-    };
-  }
+const Htmllaundry = {
+  tagsRegex: /(<([^>]+)>)/ig,
+  charsRegex: /(?!(&\w+;))[&<>"'`]/g, // Negative lookahead to ignore already encoded entities.
+  htmlEscapes: {
+    '<': '&lt;',
+    '>': '&gt;',
+    '&': '&amp;',
+    '"': '&quot;',
+    "'": '&apos;',
+    '`': '&#x60;',
+  },
 
   /**
    * Strip all markup from a HTML fragment.
@@ -24,7 +22,7 @@ class Htmllaundry {
     }
 
     return markup.replace(this.tagsRegex, '');
-  }
+  },
 
   /**
    * Convert HTML reserved characters to their corresponding
@@ -40,7 +38,7 @@ class Htmllaundry {
     return RegExp(this.charsRegex).test(string)
       ? string.replace(this.charsRegex, ch => this.htmlEscapes[ch])
       : string;
-  }
+  },
 
   /**
    * Invese operation to the escape method.
@@ -55,7 +53,7 @@ class Htmllaundry {
     return RegExp(regex).test(string)
       ? string.replace(regex, ch => newHtmlEscapes[ch])
       : string;
-  }
-}
+  },
+};
 
-export default new Htmllaundry();
+export default Htmllaundry;
