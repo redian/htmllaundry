@@ -13,7 +13,7 @@ A simple utility node module providing methods to handle html data. Inspired by 
 
 Available methods: 
 - `escape`: Convert HTML reserved characters to their corresponding HTML Entities. https://www.w3schools.com/html/html_entities.asp
-- `unsescape`: Invese operation to the escape method.
+- `unsescape`: Inverse operation to the escape method.
 - `stripMarkup`: Strip all markup from a HTML fragment.
 ```js
   // es6
