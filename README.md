@@ -12,15 +12,17 @@ A simple utility node module providing methods to handle html data. Inspired by 
 ## Usage
 
 Available methods: 
-- `escape`: Convert HTML reserved characters to their corresponding HTML Entities. https://www.w3schools.com/html/html_entities.asp
-- `unsescape`: Inverse operation to the escape method.
+- `escape`: Convert HTML reserved characters to their corresponding [HTML Entities](https://www.w3schools.com/html/html_entities.asp). 
+- `unescape`: Inverse operation of escape method.
 - `stripMarkup`: Strip all markup from a HTML fragment.
+
+##### ES6 Examples
 ```js
-  // es6
   import HL from 'htmllaundry';
 ```
+##### Escaping special reserved HTML characters
 ```js
-  // Escaping special reserved HTML characters.
+ 
   const string = "Foo & Bar";
   const escaped = HL.escape(string);
 
@@ -29,8 +31,8 @@ Available methods:
   // Output: Foo &amp; Bar
 ```
 
+##### Unescaping HTML entities to reserved HTML characters
 ```js
-  // Unescaping HTML entities to special reserved HTML characters.
   const string = "Foo &amp; Bar";
   const escaped = HL.unescape(string);
 
@@ -39,8 +41,8 @@ Available methods:
   // Output: Foo & Bar
 ```
 
+##### Stripping HTML tags
 ```js
-  // Stripping HTML tags
   const markup = "<html>Foo</html>";
   const text = HL.stripMarkup(markup);
 
@@ -48,8 +50,9 @@ Available methods:
   // Input: <html>Foo</html>
   // Output: Foo
 ```
+
+##### ES5 Example
 ```js
-  // es5
   var HL = require("htmllaundry");
 
   var markup = "<html><span>Foo</span><span>Bar</span></html>";
@@ -73,6 +76,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
+* 0.1.5 Update dependencies.
 * 0.1.4 Update dependencies.
 * 0.1.3 Use module.exports in order for the es5 bundle to work.
 * 0.1.2 Change back to object const with as default export.
