@@ -34,9 +34,9 @@ Available methods:
 ##### Unescaping HTML entities to reserved HTML characters
 ```js
   const string = "Foo &amp; Bar";
-  const escaped = HL.unescape(string);
+  const unescaped = HL.unescape(string);
 
-  console.log('string', string, 'escaped', escaped);
+  console.log('string', string, 'unescaped', unescaped);
   // Input: Foo &amp; Bar
   // Output: Foo & Bar
 ```
@@ -76,7 +76,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
-* 0.1.5 Update dependencies.
+* 0.1.6 Update documentation.
+* 0.1.5 Update documentation.
 * 0.1.4 Update dependencies.
 * 0.1.3 Use module.exports in order for the es5 bundle to work.
 * 0.1.2 Change back to object const with as default export.
