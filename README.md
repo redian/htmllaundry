@@ -76,6 +76,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
+* 0.1.7 Security update of dependencies.
 * 0.1.6 Update documentation.
 * 0.1.5 Update documentation.
 * 0.1.4 Update dependencies.
